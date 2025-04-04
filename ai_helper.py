@@ -1,5 +1,4 @@
 # ai_helper.py
-
 import sys
 from gpt4all import GPT4All
 
@@ -9,12 +8,10 @@ def main():
         sys.exit(1)
 
     prompt = " ".join(sys.argv[1:])
-    print("🧠 Running local LLM...\n")
+    print("🤖 Running GPT4All locally...\n")
 
-    # Load model 
-    model = GPT4All("mistral-7b-openorca.Q4_0.gguf", model_path="./models")
+    model = GPT4All("models/q4_0-orca-mini-3b.gguf", model_path=".", allow_download=False)
 
-    # Start a session and get the response
     with model.chat_session() as session:
         response = session.generate(prompt)
 
