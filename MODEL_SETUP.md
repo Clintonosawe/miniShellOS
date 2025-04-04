@@ -41,4 +41,3 @@ Important:
 - Follow these instructions to ensure that your local environment is correctly configured 
   without including the large model file in version control.
 
-Happy coding!
