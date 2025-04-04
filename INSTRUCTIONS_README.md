@@ -80,5 +80,3 @@ Collaborators:
 --------------
 - Clinton Osawe
 - Ayuub Hagi
-
-Happy coding, and enjoy exploring miniShellOS with its integrated AI assistant!
